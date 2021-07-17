@@ -1,0 +1,13 @@
+{
+    "name": "jiinkim/laravel-deeper-sanitizer",
+    "description": "A http request santizer for Laravel that allows you to sanitizer any format of JSON objects in Laravel Request before controllers start to deal with it",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jiin kim",
+            "email": "jiin@localhost.dev"
+        }
+    ],
+    "require": {}
+}
