@@ -1,4 +1,4 @@
-# Laravel Request Sanitizer
+# Laravel Deeper Sanitizer
 
 This package is originated from `arondeparon/laravel-request-sanitizer`. I added more useful sanitizers and reformed it to be able to handle a nested or array form of JSON inputs
 ## How to use
