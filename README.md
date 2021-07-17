@@ -113,7 +113,7 @@ class StoreCustomerInformationRequest extends FormRequest
 
 ## Installing
 
-`composer require arondeparon/laravel-request-sanitizer`
+`composer require jiinkim/laravel-deeper-sanitizer`
 
 ## Usage
 

@@ -9,5 +9,9 @@
             "email": "jiin@localhost.dev"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/http": "^6.0|^7.0|^8.0",
+        "symfony/http-foundation": "^4.3.4|>=5.1.3"
+    }
 }
