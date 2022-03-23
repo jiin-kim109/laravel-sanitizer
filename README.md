@@ -1,27 +1,12 @@
 # Laravel Deeper Sanitizer
 
-This package is originated from `arondeparon/laravel-request-sanitizer`. I added more useful sanitizers and reformed it to be able to handle a nested or array form of JSON inputs
-## How to use
+This is a clone of `arondeparon/laravel-request-sanitizer(https://github.com/ArondeParon/laravel-request-sanitizer)`. I added extra useful sanitizers to enable handling nested JSON objects or arrays.
 
-Syntax is similar to the way `rules` are added to a [Form Request](https://laravel.com/docs/master/validation#form-request-validation).
+## General Usage
 
-```php
-class StoreCustomerInformationRequest extends FormRequest
-{
-     use SanitizesInputs;
-     
-     protected $sanitizers = [
-        'lastname' => [
-            Capitalize::class,
-        ],
-        'mobile_phone' => [
-            RemoveNonNumeric::class
-        ],
-     ];
-}
-```
+Check here(https://github.com/ArondeParon/laravel-request-sanitizer/blob/main/README.md)
 
-## How to sanitize nested JSON input
+## Sanitize nested JSON object
 
 ```php
 class StoreCustomerInformationRequest extends FormRequest
@@ -55,7 +40,7 @@ class StoreCustomerInformationRequest extends FormRequest
      ];
 }
 ```
-## How to sanitize an array of JSON objects
+## Sanitize an array of JSON objects
 
 ```php
 class StoreCustomerInformationRequest extends FormRequest
@@ -89,38 +74,6 @@ class StoreCustomerInformationRequest extends FormRequest
 }
 ```
 
-## Installing
+## Installation
 
 `composer require jiinkim/laravel-deeper-sanitizer`
-
-## Predefined Sanitizers
-
-- [`Trim`](./src/Trim.php) - simple PHP `trim()` implementation
-- [`TrimDuplicateSpaces`](./src/TrimDuplicateSpaces.php) replaces duplicate spaces with a single space.
-- [`RemoveNonNumeric`](./src/RemoveNonNumeric.php) - removes any non numeric character
-- [`Capitalize`](./src/Capitalize.php) - capitalizes the first character of a string
-- [`Uppercase`](./src/Uppercase.php) - converts a string to uppercase
-- [`Lowercase`](./src/Lowercase.php) - converts a string to lowercase
-- [`FilterVars`](./src/FilterVars.php) - simple PHP `filter_var` sanitizer
-## Writing your own Sanitizer
-
-Writing your own sanitizer can be done by implementing the `Sanitizer` interface, which requires only
-one method.
-
-```php
-interface Sanitizer
- {
-     public function sanitize($input);
- }
-```
-## Credits
-
-- [Aron Rotteveel](https://github.com/arondeparon)
-- [All Contributors](../../contributors)
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-[link-downloads]: https://packagist.org/packages/arondeparon/laravel-request-sanitizer
-[ico-downloads]: https://img.shields.io/packagist/dt/arondeparon/laravel-request-sanitizer.svg?style=flat-square
