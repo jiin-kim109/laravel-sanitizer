@@ -1,6 +1,6 @@
 # Laravel Deeper Sanitizer
 
-This is a clone of `arondeparon/laravel-request-sanitizer(https://github.com/ArondeParon/laravel-request-sanitizer)`. I added extra useful sanitizers to enable handling nested JSON objects or arrays.
+This is a clone of `arondeparon/laravel-request-sanitizer`. I added extra useful sanitizers to enable handling nested JSON objects or arrays.
 
 ## General Usage
 
