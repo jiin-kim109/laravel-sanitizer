@@ -1,12 +1,12 @@
 # Laravel Deeper Sanitizer
 
-This is a clone of `arondeparon/laravel-request-sanitizer`. I added extra useful sanitizers to enable handling nested JSON objects or arrays.
+This is a fork of `arondeparon/laravel-request-sanitizer`. I added some useful custom sanitizers and a function that allows to handle nested or array format of JSON objects.
 
 ## General Usage
 
 Check here(https://github.com/ArondeParon/laravel-request-sanitizer/blob/main/README.md)
 
-## Sanitize nested JSON object
+## For sanitizing nested JSON objects
 
 ```php
 class StoreCustomerInformationRequest extends FormRequest
@@ -40,7 +40,7 @@ class StoreCustomerInformationRequest extends FormRequest
      ];
 }
 ```
-## Sanitize an array of JSON objects
+## For sanitizing array format of JSON objects
 
 ```php
 class StoreCustomerInformationRequest extends FormRequest
