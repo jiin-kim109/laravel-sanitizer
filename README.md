@@ -1,4 +1,4 @@
-# Laravel Deeper Sanitizer
+# Laravel Deep Sanitizer
 
 Note that this is just a fort of `arondeparon/laravel-request-sanitizer`, and I gave a little modification. Added additional sanitizer classes to handle more complex format of JSON payloads input.
 
