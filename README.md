@@ -1,8 +1,8 @@
 # Laravel Deeper Sanitizer
 
-I forked `arondeparon/laravel-request-sanitizer`, and modified the package. Added additional custom sanitizers and a feature to handle nested or an array format of multiple JSON objects.
+Note that this is just a fort of `arondeparon/laravel-request-sanitizer`, and I gave a little modification. Added additional sanitizer classes to handle more complex format of JSON payloads input.
 
-Please also check the original repo (https://github.com/ArondeParon/laravel-request-sanitizer/blob/main/README.md). 
+Please check the original repo (https://github.com/ArondeParon/laravel-request-sanitizer/blob/main/README.md). 
 
 ## Sanitize nested JSON objects
 
