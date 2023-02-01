@@ -1,10 +1,10 @@
 # Laravel Deep Sanitizer
 
-Note that this is just a fort of `arondeparon/laravel-request-sanitizer`, and I gave a little modification. Added additional sanitizer classes to handle more complex format of JSON payloads input.
+This repository is originated from `arondeparon/laravel-request-sanitizer`. I gave a little change for my own use. Extra sanitizer classes are to handle more JSON payload formats.
 
 Please check the original repo (https://github.com/ArondeParon/laravel-request-sanitizer/blob/main/README.md). 
 
-## Sanitize nested JSON objects
+## Sanitize a nested JSON object
 
 ```php
 class StoreCustomerInformationRequest extends FormRequest
@@ -38,7 +38,7 @@ class StoreCustomerInformationRequest extends FormRequest
      ];
 }
 ```
-## Sanitizing an array of JSON objects
+## Sanitize an array of JSON objects
 
 ```php
 class StoreCustomerInformationRequest extends FormRequest
@@ -71,7 +71,3 @@ class StoreCustomerInformationRequest extends FormRequest
      ];
 }
 ```
-
-## Installation
-
-`composer require jiinkim/laravel-deeper-sanitizer`
